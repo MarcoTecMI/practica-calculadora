@@ -1,21 +1,15 @@
-def division(a, b):
-    if b == 0:
-        print("Error: no se puede dividir entre 0")
-        return None
-    return a / b
-
-
 def main():
-    print("Función de división")
+    n1 = float(input("Dame el primer número: "))
+    n2 = float(input("Dame el segundo número: "))
 
-    num1 = float(input("Ingresa el primer número: "))
-    num2 = float(input("Ingresa el segundo número: "))
-
-    resultado = division(num1, num2)
-
-    if resultado != None:
-        print("Resultado:", resultado)
-
+    print(f"Suma: {n1 + n2}")
+    print(f"Resta: {n1 - n2}")
+    print(f"Multiplicación: {n1 * n2}")
+    
+    if n2 != 0:
+        print(f"División: {n1 / n2}")
+    else:
+        print("División: Error, no se puede dividir entre 0")
 
 if __name__ == "__main__":
     main()
